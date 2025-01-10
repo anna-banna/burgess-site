@@ -1,0 +1,507 @@
+/*-- -------------------------- -->
+<---     Contact Landing        -->
+<--- -------------------------- -*/
+
+/* Mobile - 0em and up */
+@media only screen and (min-width: 0em) {
+    #contact-landing {
+        padding: 7.5em 0 3em;
+        position: relative;
+    }
+
+    #contact-landing .container {
+        width: 96%;
+        max-width: 34em;
+        margin: auto;
+        padding: 0 1em;
+    }
+
+    #contact-landing h1 {
+        font-size: clamp(2.5em, 7vw, 3.6em);
+        margin-bottom: 0.5em;
+        color: var(--headerColor, #1a1a1a);
+        line-height: 1.2;
+    }
+
+    #contact-landing p {
+        font-size: 1.1em;
+        line-height: 1.5;
+        max-width: 40em;
+        color: var(--bodyTextColor, #4e4b66);
+    }
+}
+
+/* Tablet - 48em and up */
+@media only screen and (min-width: 48em) {
+    #contact-landing {
+        padding: 10em 0 5em;
+    }
+
+    #contact-landing .container {
+        max-width: 70.7em;
+        padding: 0 2em;
+    }
+}
+
+/*-- -------------------------- -->
+<---      Contact Info         -->
+<--- -------------------------- -*/
+
+/* Mobile - 0em and up */
+@media only screen and (min-width: 0em) {
+    #contact-info {
+        padding: 2em 0;
+        background: #F9F8F4;
+    }
+
+    #contact-info .container {
+        width: 96%;
+        max-width: 34em;
+        margin: auto;
+        padding: 0 1em;
+    }
+
+    .info-grid {
+        display: grid;
+        gap: 2em;
+    }
+
+    .info-card {
+        background: white;
+        padding: 2em;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-card .icon {
+        width: 3em;
+        height: 3em;
+        margin: 0 auto 1em;
+        background: var(--headerColor, #1a1a1a);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info-card .icon svg {
+        color: white;
+    }
+
+    .info-card h3 {
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+        color: var(--headerColor, #1a1a1a);
+    }
+
+    .info-card p {
+        color: var(--bodyTextColor, #4e4b66);
+        line-height: 1.5;
+    }
+
+    .info-card a {
+        color: var(--bodyTextColor, #4e4b66);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .info-card a:hover {
+        color: var(--headerColor, #1a1a1a);
+    }
+
+    #contact-info .info-card p a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+}
+
+/* Tablet - 48em and up */
+@media only screen and (min-width: 48em) {
+    #contact-info .container {
+        max-width: 70.7em;
+        padding: 0 2em;
+    }
+
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info-card {
+        text-align: left;
+    }
+
+    .info-card .icon {
+        margin-bottom: 0.5em;
+    }
+
+    .info-card h3 {
+        font-size: 1.5em;
+    }
+
+    .info-card p {
+        font-size: 1em;
+    }
+
+    #contact-info .info-card p a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    #contact-info .info-card p a:hover {
+        color: var(--primary);
+        /* Or any color you prefer for hover state */
+    }
+}
+
+/*-- -------------------------- -->
+<---      Contact Form         -->
+<--- -------------------------- -*/
+
+/* Mobile - 0em and up */
+@media only screen and (min-width: 0em) {
+    #contact-form {
+        padding: 3em 0;
+        background: #f9f8f4;
+    }
+
+    #contact-form .container {
+        width: 96%;
+        max-width: 34em;
+        margin: auto;
+        padding: 0 1em;
+    }
+
+    #contact-form h2 {
+        padding-top: 1.5em;
+    }
+
+    .form-wrapper h2 {
+        font-size: 1.8em;
+        margin-bottom: 1em;
+        color: var(--headerColor, #1a1a1a);
+        text-align: center;
+    }
+
+    .form-grid {
+        display: grid;
+        gap: 1.5em;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group.full-width {
+        grid-column: span 1;
+    }
+
+    .form-group label {
+        margin-bottom: 0.5em;
+        font-weight: bold;
+        color: var(--headerColor, #1a1a1a);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.75em;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1em;
+        color: #333;
+    }
+
+    .form-group textarea {
+        resize: vertical;
+    }
+
+    .button-solid {
+        border: none;
+        margin: 1em 0;
+    }
+}
+
+/* Tablet - 48em and up */
+@media only screen and (min-width: 48em) {
+    #contact-form .container {
+        max-width: 70.7em;
+        padding: 0 2em;
+    }
+
+    .form-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-group.full-width {
+        grid-column: span 2;
+    }
+
+    .form-wrapper h2 {
+        font-size: 2em;
+    }
+}
+
+/*-- -------------------------- -->
+<---       Philanthropy        -->
+<--- -------------------------- -*/
+
+/* Mobile - 0em and up */
+@media only screen and (min-width: 0em) {
+    #philanthropy {
+        padding: 3em 0;
+        background: var(--light-bg, #F9F8F4);
+    }
+
+    #philanthropy .container {
+        width: 96%;
+        max-width: 34em;
+        margin: auto;
+        padding: 0 1em;
+    }
+
+    #philanthropy h2 {
+        font-size: 1.8em;
+        margin-bottom: 1.5em;
+        color: var(--headerColor, #1a1a1a);
+        text-align: center;
+    }
+
+    .video-wrapper {
+        margin-bottom: 2em;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-wrapper video {
+        width: 100%;
+        display: block;
+    }
+
+    .philanthropy-text h3 {
+        font-size: 1.2em;
+        color: var(--headerColor, #1a1a1a);
+        margin-bottom: 0.8em;
+    }
+
+    .philanthropy-text p {
+        font-size: 1em;
+        line-height: 1.6;
+        color: var(--bodyTextColor, #4e4b66);
+        margin-bottom: 1em;
+    }
+
+    .philanthropy-text ul {
+        list-style: none;
+        padding-left: 1.2em;
+    }
+
+    .philanthropy-text ul li {
+        position: relative;
+        padding-left: 1.5em;
+        margin-bottom: 0.5em;
+        color: var(--bodyTextColor, #4e4b66);
+    }
+
+    .philanthropy-text ul li:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.5em;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--primary);
+    }
+}
+
+/* Tablet - 48em and up */
+@media only screen and (min-width: 48em) {
+    #philanthropy .container {
+        max-width: 70.7em;
+        padding: 0 2em;
+    }
+
+    #philanthropy h2 {
+        font-size: 2em;
+    }
+
+    .philanthropy-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3em;
+        align-items: center;
+    }
+
+    .video-wrapper {
+        margin-bottom: 0;
+    }
+
+    .philanthropy-text h3 {
+        font-size: 1.5em;
+    }
+}
+
+/* Dark Mode */
+body.dark-mode #philanthropy {
+    background: #0E223F;
+}
+
+body.dark-mode #philanthropy h2,
+body.dark-mode .philanthropy-text h3 {
+    color: #F9F8F4;
+}
+
+body.dark-mode .philanthropy-text p,
+body.dark-mode .philanthropy-text ul li {
+    color: #F9F8F4;
+}
+
+/*-- -------------------------- -->
+<---           FAQ             -->
+<--- -------------------------- -*/
+
+/* Mobile - 0em and up */
+@media only screen and (min-width: 0em) {
+    #faq {
+        padding: 3em 0;
+        background: white;
+    }
+
+    #faq .container {
+        width: 96%;
+        max-width: 34em;
+        margin: auto;
+        padding: 0 1em;
+    }
+
+    #faq h2 {
+        font-size: 1.8em;
+        margin-bottom: 1.5em;
+        color: var(--headerColor, #1a1a1a);
+        text-align: center;
+    }
+
+    .faq-grid {
+        display: grid;
+        gap: 2em;
+    }
+
+    .faq-item h3 {
+        font-size: 1.2em;
+        color: var(--headerColor, #1a1a1a);
+        margin-bottom: 0.5em;
+    }
+
+    .faq-item p {
+        font-size: 1em;
+        line-height: 1.6;
+        color: var(--bodyTextColor, #4e4b66);
+    }
+}
+
+/* Tablet - 48em and up */
+@media only screen and (min-width: 48em) {
+    #faq .container {
+        max-width: 70.7em;
+        padding: 0 2em;
+    }
+
+    .faq-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #faq h2 {
+        font-size: 2em;
+    }
+
+    .faq-item h3 {
+        font-size: 1.5em;
+    }
+}
+
+/* Dark Mode Styles */
+body.dark-mode #contact-landing h1 {
+    color: #F9F8F4;
+}
+
+body.dark-mode #contact-landing p {
+    color: #F9F8F4;
+}
+
+/* Contact Info Section */
+body.dark-mode #contact-info {
+    background: #0E223F;
+}
+
+body.dark-mode .info-card {
+    background: #1a2c47;
+    /* slightly lighter than the background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .info-card .icon {
+    background: var(--primary);
+}
+
+body.dark-mode .info-card h3 {
+    color: #F9F8F4;
+}
+
+body.dark-mode .info-card p,
+body.dark-mode .info-card a {
+    color: #F9F8F4;
+}
+
+body.dark-mode .info-card a:hover {
+    color: var(--primary);
+}
+
+/* FAQ Section */
+body.dark-mode #faq {
+    background: #0E223F;
+}
+
+body.dark-mode #faq h2 {
+    color: #F9F8F4;
+}
+
+body.dark-mode .faq-item h3 {
+    color: #F9F8F4;
+}
+
+body.dark-mode .faq-item p {
+    color: #F9F8F4;
+}
+
+/* Contact Form Section */
+body.dark-mode #contact-form {
+    background: #0E223F;
+}
+
+body.dark-mode .form-wrapper h2 {
+    color: #F9F8F4;
+}
+
+body.dark-mode .form-group label {
+    color: #F9F8F4;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group select,
+body.dark-mode .form-group textarea {
+    background: #1a2c47;
+    border-color: #2a3c57;
+    color: #F9F8F4;
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group select:focus,
+body.dark-mode .form-group textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+}

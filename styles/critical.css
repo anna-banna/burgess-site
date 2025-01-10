@@ -1,0 +1,348 @@
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+.mobile-wrapper .light {
+    display: none;
+}
+
+.mobile-wrapper .dark {
+    display: block;
+    opacity: 1;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    background-color: #fff;
+}
+
+.dark-mode-button .remove {
+    display: none;
+}
+
+body.scroll .mobile-wrapper .light {
+    display: block;
+}
+
+body.scroll .mobile-wrapper .dark {
+    display: none;
+    opacity: 1;
+}
+
+body.scroll .hamburger-inner,
+body.scroll .hamburger-inner::before,
+body.scroll .hamburger-inner::after {
+    background-color: #000;
+}
+
+body.scroll .dark-mode-button .remove {
+    display: block;
+}
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+    #landing {
+        position: relative;
+        z-index: 1;
+        padding-top: 7.5em;
+        font-size: 14px;
+        padding-bottom: 5em;
+        height: 100vh;
+        max-height: 45em;
+    }
+
+    #landing:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 53em;
+        width: 100%;
+        background: #F9F8F4;
+        opacity: 1;
+        bottom: 5.5em;
+        left: 0;
+        z-index: -1;
+        display: none;
+    }
+
+    #landing:after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        opacity: 1;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        opacity: .6;
+    }
+
+    #landing h1 {
+        font-size: min(10vw, 3.6em);
+        margin-bottom: 1em;
+        color: #fff;
+        position: relative;
+        z-index: 10;
+    }
+
+    #landing h2 {
+        font-size: 1em;
+        line-height: 1.52em;
+        letter-spacing: .05em;
+        font-family: 'Raleway', arial, sans-serif;
+        font-weight: 400;
+        margin-bottom: 1em;
+        width: 65%;
+        max-width: 28em;
+        color: #fff;
+        position: relative;
+        z-index: 10;
+    }
+
+    #landing .landing-image {
+        display: none;
+    }
+
+    #landing picture {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        overflow: hidden;
+    }
+
+    #landing picture video,
+    #landing picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 35% 0;
+    }
+
+    #landing .button-solid {
+        position: relative;
+        z-index: 10;
+    }
+}
+
+@media only screen and (min-width: 405px) {
+    #landing picture {
+        bottom: -13.5em;
+    }
+
+    #landing h1 {
+        max-width: 9.3559322em;
+        font-size: 2.95em;
+    }
+}
+
+@media only screen and (min-width: 579px) {
+    #landing h1 {
+        font-size: min(7vw, 3.6em);
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+    .mobile-wrapper .light {
+        display: block;
+    }
+
+    .mobile-wrapper .dark {
+        display: none;
+        opacity: 0;
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        background-color: #000;
+    }
+
+    .dark-mode-button .remove {
+        display: block;
+    }
+
+    .dark-mode-button .white {
+        display: block;
+    }
+
+    #landing {
+        font-size: inherit;
+        margin-bottom: 0em;
+        min-height: 45em;
+        padding-bottom: 0;
+        padding-top: 7.5em;
+    }
+
+    #landing:before {
+        display: block;
+        bottom: 0em;
+    }
+
+    #landing:after {
+        display: none;
+    }
+
+    #landing h1 {
+        filter: drop-shadow(0px 0px 10px #f9f8f4);
+    }
+
+    #landing h1,
+    #landing h2 {
+        color: #1a1a1a;
+    }
+
+    #landing picture {
+        font-size: 7px;
+        position: absolute;
+        display: block;
+        width: 40em;
+        height: 70em;
+        bottom: 15em;
+        left: auto;
+        top: auto;
+        z-index: 100;
+        right: 0em;
+        z-index: -1;
+    }
+
+    #landing .mobile-img {
+        display: none;
+    }
+
+    #landing .desktop-video {
+        display: block !important;
+    }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1024px) {
+    #landing {
+        margin-bottom: 15.2em;
+        font-size: min(1.3vw, 1em);
+        padding-top: 19.15em;
+    }
+
+    #landing:before {
+        height: 55em;
+        bottom: auto;
+        top: 0;
+    }
+
+    #landing .container {
+        max-width: 70.7em;
+        padding: 0;
+        position: relative;
+    }
+
+    #landing h1 {
+        font-size: 3.6em;
+        max-width: 10.51388889em;
+        margin-bottom: 0.80555556em;
+    }
+
+    #landing h2 {
+        width: 45%;
+        font-size: 1.2em;
+        max-width: 30.91666667em;
+    }
+
+    #landing picture {
+        font-size: inherit;
+        right: 0;
+        width: 33em;
+        height: 39.85em;
+        bottom: auto;
+        top: -5.9em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #landing {
+        margin-bottom: 15em;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    #landing {
+        margin-bottom: 10em;
+        padding-top: 14.3em;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    #landing {
+        margin-bottom: 10em;
+    }
+
+    /* #landing:before {
+        height: 38.5em;
+    } */
+
+    #landing h2 {
+        width: 55%;
+        margin-bottom: 3em;
+        max-width: 28em;
+        letter-spacing: .005em;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    #landing {
+        margin-bottom: 10em;
+    }
+
+    #landing .landing-image {
+        display: block;
+        position: absolute;
+        top: 15em;
+        left: 32.8em;
+        width: 8.15em;
+        height: 8.15em;
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+    body.dark-mode #landing:before {
+        background: #0B1A34;
+        opacity: .5;
+    }
+
+    body.dark-mode #landing h1,
+    body.dark-mode #landing h2 {
+        color: #fff;
+        filter: none;
+    }
+
+    body.dark-mode #landing picture:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+        background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=1);
+        /* IE6-9 fallback on horizontal gradient */
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}

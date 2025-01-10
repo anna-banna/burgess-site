@@ -1,0 +1,591 @@
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+    #landing {
+        position: relative;
+        z-index: 1;
+        padding-top: 7.5em;
+        font-size: 14px;
+        margin-bottom: 5em;
+    }
+
+    #landing h1 {
+        font-size: min(10vw, 3.6em);
+        margin-bottom: 0.671875em;
+    }
+
+    #landing p {
+        font-size: 0.9em;
+        line-height: 1.52em;
+        letter-spacing: .05em;
+        font-family: 'Raleway', arial, sans-serif;
+        font-weight: 400;
+        margin-bottom: 2em;
+        width: 65%;
+        max-width: 25.44444444em;
+    }
+
+    #landing p:last-of-type {
+        margin-bottom: 0;
+    }
+
+    #landing .landing-image {
+        display: none;
+    }
+
+    #landing picture {
+        font-size: 1vw;
+        position: absolute;
+        display: block;
+        width: 30em;
+        height: 89.85em;
+        z-index: 100;
+        /* bottom: -3.5em; */
+        bottom: -20em;
+        right: 0em;
+        z-index: -1;
+    }
+
+    #landing picture img {
+        position: absolute;
+        top: 0;
+        left: 3em;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #landing .button-solid {
+        margin-top: 2.94444444em;
+    }
+
+    #cert .container {
+        width: 96%;
+        max-width: 34em;
+        margin: auto;
+    }
+
+    #cert picture {
+        display: block;
+        width: 100%;
+        max-width: 378px;
+        margin: 2em auto;
+    }
+
+    #cert picture img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+}
+
+@media only screen and (min-width: 579px) {
+    #landing .container {
+        max-width: 39.5em;
+    }
+
+    #landing h1 {
+        font-size: min(7vw, 3.6em);
+    }
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 48em) {
+    #landing {
+        padding-top: 10.15em;
+        padding-bottom: 2.55em;
+        font-size: min(2vw, 1em);
+    }
+
+    #landing:before {
+        height: 33.3em;
+        bottom: auto;
+        top: 0;
+    }
+
+    #landing .container {
+        position: relative;
+        width: 96%;
+        max-width: 70.7em;
+        padding: 0;
+    }
+
+    #landing h1 {
+        font-size: 3.2em;
+        max-width: 13.640625em;
+    }
+
+    #landing picture {
+        font-size: inherit;
+        width: 36.4em;
+        height: 44.55em;
+        bottom: auto;
+        top: -0.85em;
+        right: -12.5em;
+    }
+
+    #cert .container {
+        max-width: 70.6em;
+    }
+
+    #cert .cert-images {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    #cert picture {
+        flex: 0 1 378px;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 979px) {
+    #landing picture {
+        right: -7em;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #landing picture {
+        right: auto;
+        left: 50%;
+        margin-left: 2.5em;
+    }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1200px) {
+    #landing {
+        margin-bottom: 12.5em;
+    }
+
+    #landing .container {
+        max-width: 70.9em;
+        font-size: min(1.6vw, 1em);
+        position: relative;
+    }
+
+    #landing picture {
+        left: auto;
+        margin: 0;
+        right: 0em;
+        top: -0.85em;
+        font-size: min(1.5vw, 1em);
+    }
+
+    /* #landing picture:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 29.7em;
+        width: 24.25em;
+        background: #CEE3DF;
+        opacity: 1;
+        bottom: -3.5em;
+        right: -2.3em;
+    } */
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+    body.dark-mode #landing h1 {
+        color: #fff;
+    }
+
+    /* body.dark-mode #landing picture:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+    /* background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6-15 */
+    /* background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    /* background: linear-gradient(135deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); */
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=1); */
+    /* IE6-9 fallback on horizontal gradient */
+    /* opacity: 1; */
+    /* top: 0; */
+    /* left: 0; */
+    /* z-index: 1; */
+    /* } */
+}
+
+/*-- -------------------------- -->
+<---           Info             -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+    #info {
+        padding: 3.75em 0;
+    }
+
+    #info .container {
+        width: 96%;
+        max-width: 34em;
+        margin: auto;
+    }
+
+    /* #info h2 {
+        font-size: 2em;
+        margin-bottom: 1em;
+        color: var(--headerColor);
+    } */
+
+    #info p {
+        line-height: 1.5;
+        margin-bottom: 2em;
+    }
+
+    #info picture {
+        display: block;
+        width: 100%;
+        margin: 2em 0;
+        aspect-ratio: 500/409;
+    }
+
+    #info picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    #info .left-section,
+    #info .right-section {
+        margin-bottom: 3em;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+    #info {
+        padding: 5em 0;
+    }
+
+    #info .container {
+        max-width: 70.6em;
+        display: flex;
+        justify-content: space-between;
+        gap: 4em;
+    }
+
+    #info .left-section,
+    #info .right-section {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
+    /* For single column layouts (like Visionary Leader section) */
+    #info .container:not(:has(.left-section)) {
+        display: block;
+        max-width: 60em;
+    }
+
+    #info .container:not(:has(.left-section)) picture {
+        max-width: 50em;
+        margin: 2em auto;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 64em) {
+    #info .container {
+        gap: 6em;
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+
+    body.dark-mode #info h2,
+    body.dark-mode #info p {
+        color: #F9F8F4;
+    }
+}
+
+/*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+    #faq {
+        background: #F9F8F4;
+        padding-top: 3.75em;
+        padding-bottom: 3.75em;
+    }
+
+    #faq .container {
+        width: 96%;
+        max-width: 32.05em;
+        padding: 0;
+    }
+
+    #faq .faq {
+        width: 100%;
+        max-width: 32.05em;
+        margin: auto;
+    }
+
+    #faq h2 {
+        color: #0E223F;
+        max-width: 10.328125em;
+    }
+
+    #faq .item {
+        margin-bottom: 2.15em;
+    }
+
+    #faq .item:last-of-type {
+        margin-bottom: 3.05em;
+    }
+
+    #faq .item p {
+        color: #0E223F;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .3s, height .3s;
+    }
+
+    #faq .item.open button {
+        margin-bottom: 0.95833333em;
+    }
+
+    #faq .item.open button:before {
+        transform: rotate(270deg);
+        transform-origin: center;
+    }
+
+    #faq .item.open p {
+        height: auto;
+        overflow: visible;
+        opacity: 1;
+    }
+
+    #faq button {
+        color: #0E223F;
+        font-size: 1.2em;
+        font-weight: bold;
+        font-family: 'Inter', Arial, sans-serif;
+        background: transparent;
+        border: none;
+        text-transform: initial;
+        margin-bottom: 0em;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+    }
+
+    #faq button:before {
+        content: '';
+        position: relative;
+        display: inline-block;
+        height: 0.125em;
+        width: 0.70833333em;
+        border-radius: 0.08333333em;
+        background: #0E223F;
+        opacity: 1;
+        margin-right: 1em;
+        transition: transform .3s;
+    }
+
+    #faq button:after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        height: 0.125em;
+        width: 0.70833333em;
+        border-radius: 0.08333333em;
+        background: #0E223F;
+        opacity: 1;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #faq p {
+        color: #614D38;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+    #faq {
+        padding-top: 4.85em;
+        position: relative;
+    }
+
+    #faq:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 2.45em;
+        width: 100%;
+        background: #F9F8F4;
+        opacity: 1;
+        top: -2.4em;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+    #faq {
+        padding-bottom: 5.45em;
+    }
+
+    #faq .container {
+        max-width: 70.9em;
+        display: flex;
+        justify-content: space-between;
+        font-size: min(1.4vw, 1em);
+    }
+
+    #faq .faq {
+        margin: 0;
+        margin-top: 0.9em;
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+    body.dark-mode #faq {
+        background: #0E223F;
+    }
+
+    body.dark-mode #faq:before {
+        background: #0E223F;
+    }
+
+    body.dark-mode #faq h2,
+    body.dark-mode #faq button,
+    body.dark-mode #faq li,
+    body.dark-mode #faq p {
+        color: #F9F8F4;
+    }
+
+    body.dark-mode #faq button:before,
+    body.dark-mode #faq button:after {
+        background: #fff;
+    }
+}
+
+/*-- -------------------------- -->
+  <---            CTA             -->
+  <--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+    #cta {
+        position: relative;
+        z-index: 1;
+        padding: 3.75em 0px;
+        overflow: hidden;
+        height: auto;
+    }
+
+    #cta:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: #383838;
+        opacity: .9;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    #cta picture {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        pointer-events: none;
+        z-index: -2;
+    }
+
+    #cta picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -2;
+    }
+
+    #cta .container {
+        width: 96%;
+        max-width: 65em;
+        margin: auto;
+    }
+
+    #cta h2 {
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0.546875em;
+    }
+
+    #cta p {
+        color: #fff;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 2.66666667em;
+    }
+
+    #cta .button-solid {
+        width: 8.88888889em;
+        margin: auto;
+        display: block;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+    #cta {
+        padding: 5.95em 0;
+    }
+
+    #cta p {
+        max-width: 43.77777778em;
+    }
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+    #cta h2 {
+        font-size: 3.2em;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    #cta {
+        background: url("../images/cta.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    #cta picture {
+        display: none;
+    }
+}
